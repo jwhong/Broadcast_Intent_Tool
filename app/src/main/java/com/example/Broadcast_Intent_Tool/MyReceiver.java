@@ -10,7 +10,7 @@ public class MyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Bundle RecExtras = intent.getExtras() ;
-        String key1 = RecExtras.getString("val");
-        Toast.makeText(context, "MyReceiver.  " + key1, Toast.LENGTH_LONG).show();
+        float value = RecExtras.getFloat("value");
+        Toast.makeText(context, "MyReceiver.  " + value, Toast.LENGTH_LONG).show();
     }
 }

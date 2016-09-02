@@ -28,8 +28,8 @@ public class MainActivity extends Activity {
     public void broadcastIntent(View view){
         Intent intent = new Intent();
         //intent.setAction("com.tutorialspoint.CUSTOM_INTENT");
-        intent.setAction("com.mooshim.mooshimeter.CUSTOM_INTENT");
-        intent.putExtra("val", "3.14159");
+        intent.setAction("com.mooshim.mooshimeter.SAMPLE_INTENT");
+        intent.putExtra("value", (float)3.14159);
         sendBroadcast(intent);
     }
 }
